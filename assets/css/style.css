@@ -220,7 +220,7 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 300px) and (max-width: 576px) {
   .bars {
     display: block;
     color: #5d3ebc;
@@ -267,7 +267,6 @@
     gap: 10px;
   }
   .cuppon .cupon-item {
-    gap: px;
     border-right: none;
     padding-right: 0;
   }
@@ -458,5 +457,511 @@
   }
   .price p {
     font-size: 18px;
+  }
+}
+.products {
+  position: relative;
+}
+.products .had {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.products .had img {
+  width: 65%;
+  border-radius: 10px;
+}
+.products .product {
+  position: absolute;
+  top: 1%;
+  left: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 15px;
+  padding-top: 20px;
+}
+.products .product .product-detail {
+  padding: 15px;
+  text-align: center;
+  width: 180px;
+  background-color: white;
+  border-radius: 15px;
+}
+.products .product .product-detail .photos {
+  position: relative;
+}
+.products .product .product-detail .photos img {
+  width: 70%;
+  height: auto;
+  border-radius: 5px;
+}
+.products .product .product-detail .photos .hards {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #333;
+}
+.products .product .product-detail .text12 {
+  margin-top: 10px;
+}
+.products .product .product-detail .text12 span {
+  font-family: "Open Sans", sans-serif;
+  color: #5d3ebc;
+  font-weight: 700 !important;
+  font-size: 12px;
+}
+.products .product .product-detail .text12 p {
+  text-align: left;
+  padding-top: 13px;
+  font-size: 13px;
+  font-family: sans-serif;
+  color: #707070;
+}
+.products .product .product-detail .icos {
+  color: gold;
+  display: flex;
+  align-items: flex-start;
+  gap: 3px;
+  margin-top: 7px;
+  font-size: 12px;
+}
+.products .product .product-detail .icos span {
+  font-size: 14px;
+  color: #555;
+}
+.products .product .product-detail .prices {
+  margin-top: 15px;
+}
+.products .product .product-detail .prices .ppps {
+  display: flex;
+  align-items: flex-start;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: line-through;
+  color: #888;
+  font-size: 14px;
+  margin: 5px;
+}
+.products .product .product-detail .prices .ssss {
+  display: flex;
+  align-items: flex-start;
+  font-family: "Open Sans", sans-serif;
+  color: #888;
+  font-size: 14px;
+  margin: 5px;
+}
+.products .product .product-detail .prices span {
+  display: flex;
+  align-items: flex-start;
+  font-family: "Open Sans", sans-serif;
+  color: #5d3ebc;
+  font-weight: 700 !important;
+  font-size: 12px;
+  margin: 5px;
+}
+.products .product .product-detail .prices p {
+  display: flex;
+  align-items: flex-start;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: #202020;
+}
+.products .product .spons {
+  position: absolute;
+  top: 100%;
+  left: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 13px;
+  padding-top: 17px;
+}
+.products .product .spons img {
+  width: 9%;
+  height: 9%;
+  border-radius: 60px;
+}
+
+.marka {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  gap: 50px;
+}
+.marka .beggi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marka .beggi img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 25px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 95px;
+  font-family: "Open Sans", sans-serif;
+}
+.footer .fMenyu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-bottom: 80px;
+}
+.footer .colum ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .colum ul li {
+  list-style: none;
+  color: #202020;
+  font-size: 13px;
+}
+.footer .colum h4 {
+  padding-bottom: 12px;
+  color: #1f1f1f;
+  font-size: 15px;
+}
+.footer .colum-item {
+  position: relative;
+  margin-top: 20px;
+  right: 1%;
+}
+.footer .colum-item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .colum-item ul li {
+  list-style: none;
+  color: #202020;
+  font-size: 13px;
+}
+.footer .colum-item ul .giris,
+.footer .colum-item ul .cikis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  width: 230px;
+  height: 40px;
+}
+.footer .colum-item ul .giris {
+  border: 1px solid #5d3ebc;
+  margin-bottom: 12px;
+}
+.footer .colum-item ul .giris a {
+  color: #5d3ebc;
+  text-decoration: none;
+}
+.footer .colum-item ul .cikis {
+  background-color: #5d3ebc;
+}
+.footer .colum-item ul .cikis a {
+  color: white;
+  text-decoration: none;
+}
+.footer .colum-item h4 {
+  padding-bottom: 15px;
+  color: #1f1f1f;
+  font-size: 20px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.form .sosial h4 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 60%;
+  color: #202020;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
+}
+.form .media {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 12px;
+  gap: 12px;
+}
+.form .media img {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form .takipet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #202020;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
+}
+.form .insta {
+  display: flex;
+  flex-direction: row;
+  color: #555555;
+  font-size: 20px;
+  gap: 30px;
+  padding-top: 12px;
+  padding-left: 50px;
+}
+.form .blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #202020;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
+}
+.form .ugur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.form .ugur img {
+  width: 50%;
+  height: auto;
+}
+.form .qr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.form .qr img {
+  width: 50%;
+}
+.form .qr .blue img {
+  width: 100%;
+}
+
+.end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.end .telif {
+  font-size: 14px;
+  color: #555555;
+}
+.end .tex {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.end .tex a {
+  color: #4f4f4f;
+}
+.end .tex a:hover {
+  color: rgb(182, 182, 182);
+}
+.end .tex span {
+  color: #4f4f4f;
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  .products {
+    position: relative;
+  }
+  .product {
+    position: absolute;
+    top: 35%;
+    right: 15%;
+    transform: translateX(-1%);
+    transform: translateY(-10%);
+  }
+  .product-detail {
+    width: 50px;
+    padding-top: 290px;
+  }
+  .products .had img {
+    width: 95%;
+  }
+  .products .product {
+    width: 100%;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .products .product .product-detail {
+    width: 65px;
+    padding: 3px;
+    border-radius: 5px;
+  }
+  .products .product .product-detail .photos img {
+    width: 35%;
+  }
+  .products .product .product-detail .photos .hards {
+    font-size: 10px;
+  }
+  .products .product .product-detail .text12 span {
+    font-size: 5px;
+  }
+  .products .product .product-detail .text12 p {
+    font-size: 3px;
+    padding-top: 5px;
+  }
+  .products .product .product-detail .icos {
+    font-size: 5px;
+  }
+  .products .product .product-detail .icos span {
+    font-size: 5px;
+  }
+  .products .product .product-detail .prices p {
+    font-size: 5px;
+  }
+  .products .product .product-detail .prices .ssss {
+    font-size: 5px;
+  }
+  .products .product .product-detail .prices .ppps {
+    font-size: 3px;
+  }
+  .products .product .product-detail .prices span {
+    font-size: 3px;
+  }
+  .products .product .spons {
+    display: none;
+  }
+  .products .product .spons img {
+    display: none;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  .marka .beggi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  .marka .beggi img {
+    width: 45%;
+    height: auto;
+  }
+  .footer {
+    padding: 10px;
+    text-align: center;
+  }
+  .footer .fMenyu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .footer .fMenyu .colum {
+    width: 100%;
+  }
+  .footer .fMenyu .colum h4 {
+    font-size: 14px;
+  }
+  .footer .fMenyu .colum ul li {
+    font-size: 12px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+  }
+  .form .sosial h4 {
+    font-size: 12px;
+  }
+  .form .takipet h4,
+  .form .blog h4 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .form .media,
+  .form .takipet .insta,
+  .form .blog {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .form .media img {
+    width: 100px;
+  }
+  .form .takipet .insta i {
+    font-size: 18px;
+  }
+  .qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .qr img {
+    width: 90px;
+    height: auto;
+  }
+  .end {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+  }
+  .end .tex {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .end .tex a {
+    font-size: 12px;
   }
 }
